@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STUDEO</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <!-- FontAwesome Libray -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body id="body">
+  <!------------------------ NAVBAR ------------------------------>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1>STUDEO</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#students">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--------------------- CAROUSEL --------------------------->
+  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-danger lh-2"
+        style="width:48px ; height:6px" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"
+        class="bg-danger" style="width:48px ; height:6px"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"
+        class="bg-danger" style="width:48px ; height:6px"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active" style='background-image:url("./img/slider1.jpg");'>
+        <div class="carousel-caption d-sm-block d-none ">
+          <h5 class="text-danger fs-1 fw-bold">Succesfull Future</h5>
+          <p class="fw-bold">Some representative placeholder content for the first slide.</p>
+          <div>
+            <button type="button" class="btn btn-danger">Start Now</button>
+            <button type="button" class="btn btn-warning">Register</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style='background-image:url("./img/slider2.jpg");'>
+        <div class="carousel-caption d-sm-block d-none ">
+          <h5 class="text-danger fs-1 fw-bold">Popular Education</h5>
+          <p class="fw-bold">Some representative placeholder content for the second slide.</p>
+          <div>
+            <button type="button" class="btn btn-danger">Start Now</button>
+            <button type="button" class="btn btn-warning">Register</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style='background-image:url("./img/slider3.jpg");'>
+        <div class="carousel-caption d-sm-block d-none  ">
+          <h5 class="text-danger fs-1 fw-bold">High Quality</h5>
+          <p class="fw-bold">Some representative placeholder content for the third slide.</p>
+          <div>
+            <button type="button" class="btn btn-danger">Start Now</button>
+            <button type="button" class="btn btn-warning">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <main>
+    <!--------------- SECTION-ABOUT --------------------->
+    <section id="about" class="container bg-light text-center">
+      <div class="instructions p-5">
+        <h1 class="text-danger mb-5">ABOUT US</h1>
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <h3>Online Courses</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam tempore odio, distinctio
+              neque enim eveniet consequatur magnam vero ut.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-headset fa-2x"></i>
+            <h3>Full-time Mentoring</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam tempore odio, distinctio
+              neque enim eveniet consequatur magnam vero ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda sit inventore quae cupiditate, unde voluptate.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h3>Learn Yourself</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam tempore odio, distinctio
+              neque enim eveniet consequatur magnam vero ut.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--------------- INSTRUCTORS --------------------->
+    <section id="instructors" class="container bg-dark p-5 text-center">
+      <h1 class="text-danger mb-5">OUR INSTRUCTORS</h1>
+      <div class="row d-flex justify-content-center g-4">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card">
+            <img src="/img/teacher6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-instagram-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-twitter-square fa-2x text-danger "></i>
+                <i class="fa-brands fa-google-plus-square fa-2x text-danger "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!--------------- SECTION-STUDENTS --------------------->
+    <section id="students" class="container bg-light p-5 text-center">
+      <h1 class="text-danger mb-5">OUR STUDENTS</h1>
+      <div class="row d-flex justify-content-center align-items-center g-4">
+        <div class="col-sm-12 col-lg-6">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur qui magni saepe reiciendis quo porro
+            nihil, quidem cumque mollitia quia. Quos quis ea reprehenderit, esse ratione molestiae possimus vel quasi
+            quisquam exercitationem voluptas quae! Minus quos voluptates sint praesentium.
+          </p>
+          <button class="btn btn-danger">Learn More</button>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <img src="/img/students1.png" alt="" width="50%">
+        </div>
+      </div>
+    </section>
+
+    <!--------------- SECTION-COURSES --------------------->
+    <section id="courses" class="container bg-dark p-5 text-center">
+      <h1 class="text-danger mb-5">COURSES</h1>
+
+      <ul class="nav nav-tabs mb-4 text-white">
+        <li class="nav-item"><a class="nav-link active text-white" data-bs-toggle="tab" href="#full-stack">Full
+            Stack</a></li>
+        <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab" href="#data-science">Data Science</a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab" href="#dev-ops">DevOps</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active show fade" id="full-stack">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/fs1.jpg">
+                <img class="thumbs" src="/img/thumbnail/fs1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/fs2.jpg">
+                <img class="thumbs" src="/img/thumbnail/fs2.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/fs3.jpg">
+                <img class="thumbs" src="/img/thumbnail/fs3.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/fs4.jpg">
+                <img class="thumbs" src="/img/thumbnail/fs4.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="data-science">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ds1.jpg">
+                <img class="thumbs" src="/img/thumbnail/ds1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ds2.jpg">
+                <img class="thumbs" src="/img/thumbnail/ds2.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ds3.jpg">
+                <img class="thumbs" src="/img/thumbnail/ds3.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ds4.jpg">
+                <img class="thumbs" src="/img/thumbnail/ds4.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="dev-ops">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ops1.jpg">
+                <img class="thumbs" src="/img/thumbnail/ops1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ops2.jpg">
+                <img class="thumbs" src="/img/thumbnail/ops2.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ops3.jpg">
+                <img class="thumbs" src="/img/thumbnail/ops3.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <a data-fslightbox href="/img/thumbnail/ops4.jpg">
+                <img class="thumbs" src="/img/thumbnail/ops4.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--------------- SECTION-CONTACT --------------------->
+    <section id="contact" class="container bg-light p-5 text-center">
+      <h1 class="text-danger mb-5">CONTACT</h1>
+      <p class="mb-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptates quia.
+        Eveniet explicabo totam numquam? Maiores neque eaque facere mollitia Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Officiis, fuga?
+      </p>
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-sm-4">
+          <i class="fas fa-phone fa-2x text-danger"></i>
+          <h5>Telephone</h5>
+          <a href="#">+123 456 77 88 99</a>
+        </div>
+        <div class="col-12 col-sm-4">
+          <i class="fab fa-whatsapp fa-2x text-danger"></i>
+          <h5>Whatsapp</h5>
+          <a href="#">+123 456 77 88 99</a>
+        </div>
+        <div class="col-12 col-sm-4">
+          <i class="fas fa-envelope fa-2x text-danger"></i>
+          <h5>Email</h5>
+          <a href="#">+123 456 77 88 99</a>
+        </div>
+      </div>
+
+      <form class="row g-4">
+        <div class="col-sm-12 col-md-6">
+          <input class="form-control w-100" type="text" placeholder="Enter name">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <input class="form-control w-100" type="text" placeholder="Enter Email">
+        </div>
+        <div class="col-sm-12">
+          <input class="form-control w-100" type="text" placeholder="Enter Subject">
+        </div>
+        <div class="col-sm-12 form-floating">
+
+          <textarea class="form-control" name="comment" type="text" placeholder="Enter Your Comment"
+            id="comment"></textarea>
+          <label for="comment">Enter Your Comment</label>
+
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger w-25 ">Submit</button>
+        </div>
+
+      </form>
+
+      <h1 class="text-danger my-5">LOCATION</h1>
+      <iframe
+        src="https://www.google.com/maps/place/Svalbard+Museum,+Vei+231+-+1,+Longyearbyen+9170,+Svalbard+%26+Jan+Mayen/@78.2221597,15.6520637,15z/data=!3m1!1e3!4m2!3m1!1s0x459c5326bbebcbbf:0xc2e33899ce054a2d"
+        frameborder="0" width="100%" height="500px"></iframe>
+
+    </section>
+
+  </main>
+
+  <!------------------ FOOTER --------------------->
+  <footer class="container bg-dark p-5 text-center">
+    <div class="d-flex justify-content-center">
+      <i class="fab fa-facebook fa-2x  p-2"></i>
+      <i class="fab fa-youtube fa-2x   p-2"></i>
+      <i class="fab fa-linkedin fa-2x  p-2"></i>
+      <i class="fab fa-instagram fa-2x   p-2"></i>
+    </div>
+    <div>
+      <p class="text-white mt-2">© 2022 Copyright by EMRE</p>
+    </div>
+  </footer>
+
+  <a href="#body" class="top text-center">
+    <i class=" top-arrow fas fa-arrow-up"></i>
+  </a>
+
+  <!------------------ SCRIPTS --------------------->
+  <!-- fslightbox.js (Image and Video Viewer Library)-->
+  <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+:root {
+  --red: #dc3545;
+}
+
+/*! --------------- 1- NAVBAR ------------------ */
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 1s;
+  color: rgb(59, 56, 56);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--red);
+}
+
+/*! --------------- 2- CAROUSEL ---------------- */
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-item {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  margin-bottom: 40vh;
+}
+
+.carousel-indicators {
+  margin-bottom: 20vh;
+}
+
+.carousel-caption h5 {
+  text-shadow: 2px 2px 5px black;
+}
+
+.carousel-caption button {
+  width: 7rem;
+}
+
+/*! --------------- 3- ABOUT SECTION ----------- */
+#about .card {
+  transition: 1s;
+}
+
+#about .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.socials i+i {
+  margin-left: .3rem;
+}
+
+.socials i {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  opacity: .5;
+}
+
+/*! ------------ 4- STUDENTS SECTION ----------- */
+#students .btn:hover {
+  background-color: #bb2d3b;
+}
+
+/*! ------------ 5- COURSES SECTION ------------- */
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #bb2d3b;
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 5px;
+  font-size: .7rem;
+}
+
+.thumbs {
+  max-width: 100%;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+/*! ------------ 6- CONTACT SECTION ------------ */
+
+/*! ---------------- 7- FOOTER --------------- */
+footer i {
+  cursor: pointer;
+  color: white;
+  transition: 1s;
+}
+
+footer i:hover {
+  cursor: pointer;
+  color: #bb2d3b;
+}
+
+
+.top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--red);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.top i {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.top i:hover {
+  color: yellow;
+}
