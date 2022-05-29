@@ -44,11 +44,11 @@
 }
 
 /*! --------------- 3- ABOUT SECTION ----------- */
-#about .card {
+#instructors .card {
   transition: 1s;
 }
 
-#about .card:hover {
+#instructors .card:hover {
   transform: scale(1.1);
   z-index: 1;
 }
